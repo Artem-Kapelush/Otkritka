@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:larger ;
+}
+.container{
+    margin: 0 auto;
+    width: 756px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    text-align: center;
+}
+.header, .main {
+    width: 100%;
+    background-color: #e8e7e2;
+}
+.img {
+    width: 100%;
+    height: 756px;
+    background: url(../img/motivation.jpg);
+}
+@media screen and (max-width: 425px){
+    .img{
+        background: url(../img/motivation-mobile.jpg);
+        height: 605px;
+    }
+    .header, .main {
+        background-color: #ece5df;
+        width: 425px;
+    }
+}
